@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node index.js",
-    "coverage": "npm run test && jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "Keith Williams",
