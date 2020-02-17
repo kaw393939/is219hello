@@ -21,8 +21,8 @@ test('Calculator Multiply 2 by  2 has a result equal to 4', () => {
 
 test('Calculator add array of 1,2,3,4 and get result 10', () => {
     let Calc = new Calculator();
-    myarray = [1,2,3,4]
-    expect(Calc.sumList(myarray)).toBe(10);
+    let myArray = [1,2,3,4]
+    expect(Calc.Add(myArray)).toBe(10);
     expect(Calc.Result).toBe(10);
 
 });
