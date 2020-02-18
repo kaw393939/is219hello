@@ -12,6 +12,6 @@ test('check if a string variable throws an error exception', () => {
 
     let a = "test";
 
-    expect(() => sanitization.checkIfString(a)).toThrowError('Cannot add Strings');
+    expect(() => sanitization.checkIfString(a)).toThrow();
 
 });
