@@ -1,9 +1,14 @@
 const Calculator = require('./Calculator');
-const mathOperations = require('MathOperations');
 class Statistics extends Calculator {
 
     Variance(a,b) {
         this.Difference(a,b);
     }
+    Mean(values) {
+        let sum = this.Add(values);
+        let numValues = values.length;
+        return this.Divide(sum,numValues);
+    }
 
 }
+module.exports = Statistics;
