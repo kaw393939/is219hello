@@ -15,5 +15,8 @@ class Calculator {
     Multiply(a,b) {
         return this.Result = MathOperations.product(a,b);
     }
+    Difference(a,b) {
+        return this.Result = MathOperations.difference(a,b);
+    }
 }
 module.exports = Calculator;

@@ -1,6 +1,7 @@
 const addition = require('./addition');
 const multiply = require('./multiply');
 const divide = require('./divide');
+const difference = require('./subtraction');
 
 class MathOperations {
     static sum(a = null, b = null) {
@@ -15,6 +16,9 @@ class MathOperations {
     }
     static quotient(a,b) {
         return divide(a,b);
+    }
+    static difference(a,b) {
+        return difference.difference(a,b);
     }
 }
 
