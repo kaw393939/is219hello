@@ -1,11 +1,22 @@
-const Calculator = require('./MathOperations');
-a = 1;
-b = 2;
+const parse = require('csv-parse')
 
-sum = Calculator.sum(a,b);
-product = Calculator.product(a,b);
-quotient = Calculator.quotient(a,b);
+const output = []
+parse(`
+  "1","2","3"
+  "a","b","c"
+`, {
+    trim: true,
+    skip_empty_lines: true
+})
+    .on('readable', function(){
+        let record
+        while (record = this.read()) {
+            output.push(record)
+        }
+    })
+    // When we are done, test that the parsed output matched what expected
+    .on('end', function(){
 
-console.log("The sum is: " + sum);
-console.log("The product is: " + product);
-console.log("The quotient is: " + quotient);
+        console.log(output);
+
+    })
