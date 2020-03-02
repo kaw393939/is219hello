@@ -1,10 +1,10 @@
 const parse = require('csv-parse')
-
+const fs = require('fs');
 const output = []
-parse(`
-  "1","2","3"
-  "a","b","c"
-`, {
+let csvFile = 'Data/WorldCitiesShortList.csv';
+fs.createReadStream(csvFile)
+    .pipe(parse({
+    delimiter: ',',
     trim: true,
     skip_empty_lines: true
 })
@@ -19,4 +19,4 @@ parse(`
 
         console.log(output);
 
-    })
+    }));
