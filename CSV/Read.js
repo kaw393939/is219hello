@@ -20,5 +20,5 @@ module.exports = class Read {
         return list;
 
     }
-    
+
 }
