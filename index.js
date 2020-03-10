@@ -1,6 +1,6 @@
 const parse = require('csv-parse')
 const fs = require('fs');
-const City = require('./Models/city')
+const City = require('./Models/City')
 const output = []
 let csvFile = 'Data/worldcities.csv';
 
@@ -16,7 +16,7 @@ fs.createReadStream(csvFile)
         let record
         while (record = this.read()) {
             console.log(record)
-            let city = new City(record)
+            let city = City.create(record);
             output.push(record)
         }
     })
