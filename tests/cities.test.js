@@ -1,4 +1,4 @@
-const City = require('../Models/City')
+const City = require('../src/Models/City')
 
 test('Can create a city object', () => {
     let city = new City();

@@ -1,11 +1,11 @@
-const Calculator = require('./Calculator');
+const calculator = require('./Calculator');
 class Statistics extends Calculator {
 
     Variance(a,b) {
         return this.Difference(a,b);
     }
     Mean(values) {
-        let sum = this.Add(values);
+        let sum = this.Sum(values);
         let numValues = values.length;
         return this.Divide(sum,numValues);
     }

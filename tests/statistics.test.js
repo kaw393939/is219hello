@@ -1,10 +1,10 @@
-const Statistics = require('../Statistics');
+const Statistics = require('../src/Statistics');
 const expect = require("expect");
 
 test('calculating mean', () => {
     let a = [1,2];
-    let Stat = new Statistics();
-    let mean = Stat.Mean(a);
+    let stat = new Statistics();
+    let mean = stat.Mean(a);
 
     expect(mean).toBe(1.5);
 });
