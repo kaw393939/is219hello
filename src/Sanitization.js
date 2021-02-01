@@ -1,4 +1,4 @@
-class sanitization {
+class Sanitization {
     static checkIfString(a) {
         let check = true;
         if (typeof a === 'string' || a instanceof String) {
@@ -10,4 +10,4 @@ class sanitization {
     }
 }
 
-module.exports = sanitization;
+module.exports = Sanitization;

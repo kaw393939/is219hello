@@ -2,7 +2,7 @@ const parse = require('csv-parse')
 const fs = require('fs');
 const City = require('./Models/City')
 const output = []
-let csvFile = 'Data/worldcities.csv';
+let csvFile = 'data/worldcities.csv';
 
 
 fs.createReadStream(csvFile)
