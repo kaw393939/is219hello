@@ -14,11 +14,11 @@
   "email": "keith@webizly.com",
   "license": "ISC",
   "dependencies": {
-    "csv": "^5.3.1",
+    "csv": "^5.3.2",
     "csv-parse": "latest"
   },
   "devDependencies": {
-    "coveralls": "^3.0.9",
-    "jest": "^25.1.0"
+    "coveralls": "^3.1.0",
+    "jest": "^25.5.4"
   }
 }
