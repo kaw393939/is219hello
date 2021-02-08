@@ -1,6 +1,5 @@
-const calculator = require('./Calculator');
+const Calculator = require('./Calculator');
 class Statistics extends Calculator {
-
     Variance(a,b) {
         return this.Difference(a,b);
     }
