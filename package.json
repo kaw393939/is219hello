@@ -2,10 +2,10 @@
   "name": "is219hello",
   "version": "1.0.0",
   "description": "My First Node App",
-  "main": "src/index.js",
+  "main": "src/Index.js",
   "scripts": {
     "test": "jest",
-    "start": "node src/index.js",
+    "start": "node src/Index.js",
     "coverage": "jest --coverage",
     "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },

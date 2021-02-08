@@ -1,4 +1,4 @@
-const sanitization = require('../sanitization');
+const sanitization = require('../src/Sanitization');
 const expect = require("expect");
 
 
