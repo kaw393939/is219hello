@@ -9,7 +9,7 @@ test('Calculator divide 2 by  2 to equal 1', () => {
 });
 test('Calculator Add 2 by  2 to equal 4', () => {
     let calc = new Calculator();
-    expect(calc.Sum(2, 2)).toBe(4);
+    expect(calc.Sum(2, 3)).toBe(5);
     expect(calc.Result).toBe(4);
 
 });
